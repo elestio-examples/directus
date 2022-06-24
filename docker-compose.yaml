@@ -1,7 +1,6 @@
 version: "3.2"
 services:
   database:
-    container_name: database
     image: postgres:14
     restart: always
     volumes:
@@ -13,13 +12,11 @@ services:
       POSTGRES_PASSWORD: ${SOFTWARE_PASSWORD}
       POSTGRES_DB: "directus"
   cache:
-    container_name: cache
     image: redis:6
     restart: always
     networks:
       - directus
   directus:
-    container_name: directus
     restart: always
     image: directus/directus:${SOFTWARE_VERSION_TAG}
     ports:
