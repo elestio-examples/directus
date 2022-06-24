@@ -1,0 +1,19 @@
+ports:
+  - protocol: "HTTPS"
+    targetProtocol: "HTTP"
+    listeningPort: "443"
+    targetPort: "8055"
+    public: true
+    path: "/"
+    isAuth: false
+    login: ""
+    password: ""
+environments:
+  - key: "SOFTWARE_VERSION_TAG"
+    value: "latest"
+  - key: "SOFTWARE_PASSWORD"
+    value: "random_password"
+  - key: "ADMIN_EMAIL"
+    value: '[EMAIL]'
+  - key: "ADMIN_PASSWORD"
+    value: "random_password"
