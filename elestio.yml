@@ -18,7 +18,8 @@ environments:
     value: '[EMAIL]'
   - key: "ADMIN_PASSWORD"
     value: "random_password"
-runTime: "dockerCompose"
+config:
+  runTime: "dockerCompose"
   version: ""
   framework: ""
   buildCommand: "docker-compose build"
