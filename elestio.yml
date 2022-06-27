@@ -3,6 +3,7 @@ ports:
     targetProtocol: "HTTP"
     listeningPort: "443"
     targetPort: "8055"
+    targetIP: "172.17.0.1"
     public: true
     path: "/"
     isAuth: false
@@ -17,3 +18,9 @@ environments:
     value: '[EMAIL]'
   - key: "ADMIN_PASSWORD"
     value: "random_password"
+runTime: "dockerCompose"
+  version: ""
+  framework: ""
+  buildCommand: "docker-compose build"
+  buildDir: "/"
+  runCommand: "docker-compose up -d"
