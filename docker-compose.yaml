@@ -21,6 +21,9 @@ services:
     image: directus/directus:${SOFTWARE_VERSION_TAG}
     ports:
       - 172.17.0.1:8055:8055
+    volumes:
+      - ./uploads:/directus/uploads
+      - ./extensions:/directus/extensions
     networks:
       - directus
     depends_on:
