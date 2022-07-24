@@ -27,6 +27,8 @@ config:
   runCommand: "docker-compose up -d"
   icon: "icon.svg"
   screenshot: "screenshot.png"
+lifeCycleConfig:
+  preInstallCommand: "./scripts/preInstall.sh"
 webUI:
   - url: "https://[CI_CD_DOMAIN]"
     label: "Directus Admin"
