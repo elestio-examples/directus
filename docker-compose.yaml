@@ -1,7 +1,7 @@
 version: "3.2"
 services:
   database:
-    image: postgres:14
+    image: postgis/postgis:15-master
     restart: always
     volumes:
       - ./data:/var/lib/postgresql/data
