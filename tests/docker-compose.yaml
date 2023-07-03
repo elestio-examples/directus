@@ -32,14 +32,14 @@ services:
     environment:
       KEY: ${SOFTWARE_PASSWORD}
       SECRET: ${SOFTWARE_PASSWORD}
-      PUBLIC_URL: https://[DOMAIN]
+      PUBLIC_URL: https://your.domain
       DB_CLIENT: "pg"
       DB_HOST: "database"
       DB_PORT: "5432"
       DB_DATABASE: "directus"
       DB_USER: "directus"
       DB_PASSWORD: ${SOFTWARE_PASSWORD}
-      EMAIL_FROM: [DOMAIN]@vm.elestio.app
+      EMAIL_FROM: your.domain@vm.elestio.app
       EMAIL_TRANSPORT: "smtp"
       EMAIL_SMTP_HOST: "172.17.0.1"
       EMAIL_SMTP_PORT: 25
