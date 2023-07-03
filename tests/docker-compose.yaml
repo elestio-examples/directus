@@ -18,7 +18,7 @@ services:
       - directus
   directus:
     restart: always
-    image: directus/directus:${SOFTWARE_VERSION_TAG}
+    image: elestio4test/directus:${SOFTWARE_VERSION_TAG}
     ports:
       - 172.17.0.1:8055:8055
     volumes:
