@@ -11,15 +11,17 @@ ports:
     password: ""
 environments:
   - key: "SOFTWARE_VERSION_TAG"
-    value: "9.23.0"
+    value: "latest"
   - key: "SOFTWARE_PASSWORD"
     value: "random_password"
   - key: "ADMIN_EMAIL"
-    value: '[EMAIL]'
+    value: "[EMAIL]"
   - key: "ADMIN_PASSWORD"
     value: "random_password"
   - key: "DOMAIN"
-    value: "[CI_CD_DOMAIN]"    
+    value: "[CI_CD_DOMAIN]"
+  - key: "EMAIL_FROM"
+    value: "[DOMAIN]@vm.elestio.app"
 config:
   runTime: "dockerCompose"
   version: ""
@@ -36,4 +38,3 @@ webUI:
     label: "Directus Admin"
     login: "[ADMIN_EMAIL]"
     password: "[ADMIN_PASSWORD]"
-
