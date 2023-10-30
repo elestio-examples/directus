@@ -11,7 +11,7 @@ ports:
     password: ""
 environments:
   - key: "SOFTWARE_VERSION_TAG"
-    value: "latest"
+    value: "v9.26.0"
   - key: "SOFTWARE_PASSWORD"
     value: "random_password"
   - key: "ADMIN_EMAIL"
