@@ -45,7 +45,7 @@ services:
       EMAIL_SMTP_HOST: "172.17.0.1"
       EMAIL_SMTP_PORT: 25
       EMAIL_SMTP_SECURE: "false"
-      EMAIL_SMTP_IGNORE_TLS: "false"
+      EMAIL_SMTP_IGNORE_TLS: "true"
       CACHE_ENABLED: "true"
       CACHE_STORE: "redis"
       CACHE_REDIS: "redis://cache:6379"
